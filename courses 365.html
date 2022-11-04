@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Course 365 - Learning with unlimited!</title>
+  
+  <!-- Nhúng các thư viện BS4 & jQuery, awesome font -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+  <!-- Các file css và js tự định nghĩa thêm -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+  <style>
+    .has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+  </style>
+</head>
+<body>
+    <!-- 1. Header - Navbar menu -->
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#"><img src="images/Ionic_logo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Browse courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Web Development</a>
+                <a class="dropdown-item" href="#">Mobile App</a>
+                <a class="dropdown-item" href="#">Desktop App</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About us
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Vision & Mission</a>
+                <a class="dropdown-item" href="#">Team</a>
+                <a class="dropdown-item" href="#">Contact Us</a>
+              </div>
+            </li>                      
+          </ul>
+          <div class="main form-inline my-2 my-lg-0">
+            <div class="form-group has-search">
+              <span class="fa fa-search form-control-feedback"></span>
+              <input type="text" class="form-control" placeholder="Search courses">
+            </div>
+            <button class="btn btn-outline-primary my-2 my-sm-0 mx-2" type="submit">Search</button>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <!-- 2. Slide body -->
+    <div class="container-fluid bg-info t-1">
+      <div class="container">
+        <div class="row mx-auto">
+          <div class="col-md-7 text-white" style="
+           border-top-width: 250px;
+            padding-top: 250px;">
+            <h1>Welcome to Ionic Course 365</h1>
+            <h2>Learning Center</h2>
+            <p>Ionic Course 365 is an online learning and teaching market place with over 5000 courses and one million Students.
+              Instructor and expertly crafted courses, design for modern students and entrepreneur.
+            </p>
+            <button class="btn btn-warning text-dark p-2">Browse courses</button>
+            <button class="btn btn-light text-dark p-2">Become an instructor</button>
+          </div>
+          <div class="col-md-5 mx-auto mt-5">
+            <img src="images/ionic-207965.png" class="mt-5 mb-0" >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- 3. Courses content -->
+      <div class="container-fluid p-3">
+        <!--title: Recommended for you-->
+        <div class="container">
+          <div class="row my-4">
+            <h3>Recommended for you</h3>
+          </div>
+          <div class="row">
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/courses/course-angular.jpg" class="card-img-top" alt="img of course angula">
+                <div class="card-body">
+                  <h5 class="card-title">How to easily create a website with Angular</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 3h56m Beginner</p>
+                  <p><span><del>$750</del></span><b> $600</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/morris_mccoy.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted text-center">Morris Mccoy</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-python.jpg" class="card-img-top" alt="img of course python">
+                <div class="card-body">
+                  <h5 class="card-title">The Python Course: build web application</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 4h30m Advanced</p>
+                  <p><span><del>$1100</del></span><b> $900</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/claire_robertson.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Claire Robertson</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-graphql.jpg" class="card-img-top" alt="img of course graphql">
+                <div class="card-body">
+                  <h5 class="card-title">Introduction to GraphQL for biginners</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 2h15m Intermediate</p>
+                  <p><span><del>$850</del></span><b> $650</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/ted_hawkins.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Ted Hawkins</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-javascript.jpg" class="card-img-top" alt="img of course javascript">
+                <div class="card-body">
+                  <h5 class="card-title">Getting started with Javascript</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 3h34m Beginner</p>
+                  <p><span><del>$400</del></span><b> $300</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/ted_hawkins.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Ted Hawkins</medium>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--title: Most popular-->
+        <div class="container">
+          <div class="row my-4">
+            <h3>Most popular</h3>
+          </div>
+          <div class="row">
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/courses/course-css.jpg" class="card-img-top" alt="img of course angula">
+                <div class="card-body">
+                  <h5 class="card-title">How to easily create a website with Angular</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 3h56m Beginner</p>
+                  <p><span><del>$750</del></span><b> $600</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/morris_mccoy.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted text-center">Morris Mccoy</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-javascript.jpg" class="card-img-top" alt="img of course python">
+                <div class="card-body">
+                  <h5 class="card-title">The Python Course: build web application</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 4h30m Advanced</p>
+                  <p><span><del>$1100</del></span><b> $900</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/claire_robertson.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Claire Robertson</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-graphql.jpg" class="card-img-top" alt="img of course graphql">
+                <div class="card-body">
+                  <h5 class="card-title">Introduction to GraphQL for biginners</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 2h15m Intermediate</p>
+                  <p><span><del>$850</del></span><b> $650</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/ted_hawkins.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Ted Hawkins</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-wordpress.jpg" class="card-img-top" alt="img of course javascript">
+                <div class="card-body">
+                  <h5 class="card-title">Getting started with Javascript</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 3h34m Beginner</p>
+                  <p><span><del>$400</del></span><b> $300</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/ted_hawkins.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Ted Hawkins</medium>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--title: Trending-->
+        <div class="container">
+          <div class="row my-4">
+            <h3>Trending</h3>
+          </div>
+          <div class="row">
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/courses/course-angular.jpg" class="card-img-top" alt="img of course angula">
+                <div class="card-body">
+                  <h5 class="card-title">How to easily create a website with Angular</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 3h56m Beginner</p>
+                  <p><span><del>$750</del></span><b> $600</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/morris_mccoy.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted text-center">Morris Mccoy</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-python.jpg" class="card-img-top" alt="img of course python">
+                <div class="card-body">
+                  <h5 class="card-title">The Python Course: build web application</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 4h30m Advanced</p>
+                  <p><span><del>$1100</del></span><b> $900</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/claire_robertson.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Claire Robertson</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-graphql.jpg" class="card-img-top" alt="img of course graphql">
+                <div class="card-body">
+                  <h5 class="card-title">Introduction to GraphQL for biginners</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 2h15m Intermediate</p>
+                  <p><span><del>$850</del></span><b> $650</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/ted_hawkins.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Ted Hawkins</medium>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/courses/course-javascript.jpg" class="card-img-top" alt="img of course javascript">
+                <div class="card-body">
+                  <h5 class="card-title">Getting started with Javascript</h5>
+                  <p class="card-text"><span><i class="fas fa-clock"></i>  </span> 3h34m Beginner</p>
+                  <p><span><del>$400</del></span><b> $300</b></p>
+                </div>
+                <div class="card-footer">
+                  <img src="images/teacher/ted_hawkins.jpg" class="rounded-circle" style="width: 40px;height: auto;">
+                  <medium class="text-muted">Ted Hawkins</medium>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- 4. Footer -->
+    <div class="container p-4">
+      <footer class="row">
+        <div class="col-md-6 text-center text-muted">
+          <p><span><i class="fas fa-copyright"></i></span>  Ionic Course 365. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <ul class="nav justify-content-center pb-3 mb-3">
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-primary">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-primary">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-primary">Feedbacks</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link px-2 text-primary">Support</a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    
+</body>
+</html>
